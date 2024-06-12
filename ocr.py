@@ -18,14 +18,17 @@ def write_on_frame(reader, frame, bottom_left_corner = (10, 50), font = cv2.FONT
 
 
 def display_text_on_photo(reader, photo_path):
-    capture = cv2.VideoCapture(photo_path)
-    ret, frame = capture.read()
-
-    cv2.namedWindow('Text_on_image', frame)
-    write_on_frame(reader, frame)
-    cv2.imshow('frame', frame)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    try:
+        capture = cv2.VideoCapture(photo_path)
+        ret, frame = capture.read()
+    
+        cv2.namedWindow('Text_on_image', frame)
+        write_on_frame(reader, frame)
+        cv2.imshow('frame', frame)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+    except:
+        logging.exception('Erro ao carregar foto')
 
 def display_text_on_video(reader, video_path = 0):
     try:
