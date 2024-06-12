@@ -6,7 +6,7 @@ Nesse projeto você verá como apliquei conhecimentos básicos de opencv, easyoc
 ## A maneira de executar o código corretamente é da seguinte maneira:<br>
 Caso queira executar na sua webcam basta rodar no cmd<br>
 `python ocr.py -l opção_de_lingua -m webcam` <br>
-Caso queira executar um vídeo
+Caso queira executar um vídeo<br>
 `python ocr.py -l opção_de_lingua -m video -p path_para_o_video` <br>
 e por fim caso queira uma foto <br>
 `python ocr.py -l opção_de_lingua -m photo -p path_para_a_foto`<br>
