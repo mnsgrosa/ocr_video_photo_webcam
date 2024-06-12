@@ -96,6 +96,6 @@ if __name__ == '__main__':
         display_text_on_photo(reader, args['path'])
     elif args['mode'] == 'webcam':
         #call webcam reading function
-        display_video(reader)
+        display_text_on_video(reader)
     else:
         raise NotImplementedError
